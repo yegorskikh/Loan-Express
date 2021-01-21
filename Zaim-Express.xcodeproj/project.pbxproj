@@ -11,6 +11,7 @@
 		7B188B1F25B8249100750A54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B188B1E25B8249100750A54 /* ContentView.swift */; };
 		7B188B2125B8249500750A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B188B2025B8249500750A54 /* Assets.xcassets */; };
 		7B188B2425B8249500750A54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B188B2325B8249500750A54 /* Preview Assets.xcassets */; };
+		7B477B4525B8880D0032F428 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B477B4425B8880C0032F428 /* CheckBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		7B188B2025B8249500750A54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B188B2325B8249500750A54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B188B2525B8249500750A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B477B4425B8880C0032F428 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				7B188B1C25B8249100750A54 /* Zaim_ExpressApp.swift */,
 				7B188B1E25B8249100750A54 /* ContentView.swift */,
+				7B477B4425B8880C0032F428 /* CheckBoxView.swift */,
 				7B188B2025B8249500750A54 /* Assets.xcassets */,
 				7B188B2525B8249500750A54 /* Info.plist */,
 				7B188B2225B8249500750A54 /* Preview Content */,
@@ -140,6 +143,7 @@
 			files = (
 				7B188B1F25B8249100750A54 /* ContentView.swift in Sources */,
 				7B188B1D25B8249100750A54 /* Zaim_ExpressApp.swift in Sources */,
+				7B477B4525B8880D0032F428 /* CheckBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
