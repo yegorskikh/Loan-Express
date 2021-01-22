@@ -7,18 +7,16 @@
 
 import SwiftUI
 
-
-struct ContentView: View {
+struct CheckoutView: View {
     
     @State var loanAmount: Double = 15000
     @State var term: Double = 15
-    @State var refundAmount = "X"
-    @State var returnDay = "XX.XX.XXXX"
+    @State var refundAmount = "XX XXX"
+    @State var returnDay = "XX месяц XXXX г."
     
-    let checkBox1 = CheckBoxView()
-    let checkBox2 = CheckBoxView()
-    
-    
+    @State private var isActivate1: Bool = false
+    @State private var isActivate2: Bool = false
+
     var body: some View {
         
         NavigationView {
@@ -70,37 +68,57 @@ struct ContentView: View {
                 .padding()
                 
                 VStack {
+                    
                     HStack {
-                        checkBox1
+                        CheckBoxView(isChecked: $isActivate1)
                             .foregroundColor(.green)
-                        Text("Даю свое Согласие на обработку персональных данных")
-                            .font(.system(size: 10))
-                            .multilineTextAlignment(.leading)
+                        VStack {  // << any container
+                            Text("Даю свое").foregroundColor(.clear) +
+                                Text(" Согласие на обработку персональных данных").foregroundColor(.green)
+                        }
+                        .onTapGesture {          // allowed tap
+                            
+                            print(">> tapped Согласие на обработку персональных данных")
+                            
+                        }
+                        .overlay(
+                            Text("Даю свое").contentShape(Rectangle())
+                                .onTapGesture {  },                   // << blocked !!
+                            alignment: .topLeading)
+                        .font(.system(size: 10))
                         Spacer()
                     }
                     .padding(.bottom, 1.0)
+                    
                     HStack {
-                        checkBox2
+                        CheckBoxView(isChecked: $isActivate2)
                             .foregroundColor(.green)
-                        Text("Прошу предоставить мне займ, подлинность предоставленных данных подтверждаю, и с Информацией об условиях предостовления, использования, использования и возврата потребитеьского займа, c Общими условаиями договора потребительского займа и Соглашением об использовании АСП ознакомлен и полностью согласен")
+                        Text("Прошу предоставить мне займ").foregroundColor(.green)
+                            .onTapGesture {
+                                print(">> tapped Прошу предоставить мне займх")
+                            }
                             .font(.system(size: 10))
                             .multilineTextAlignment(.leading)
                         Spacer()
                     }
                     .padding(.bottom, 5.0)
+                    
                     Button(action: {
+                        
                         // ...
+                        
                     }) {
                         Text("Получить деньги")
                     }
-                    .frame(width: 350, height: 50, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                    .disabled(!isActivate1)
+                    .disabled(!isActivate2)
+                    .frame(width: 350, height: 50, alignment: .center)
                     .foregroundColor(.white)
                     .background(Color.orange)
                     .cornerRadius(10)
                     
                 }
                 .padding()
-                
             }
             .navigationTitle("Оформить займ")
         }
@@ -110,7 +128,9 @@ struct ContentView: View {
     
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            CheckoutView()
         }
     }
 }
+
+

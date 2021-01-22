@@ -8,7 +8,8 @@
 import SwiftUI
 
 struct CheckBoxView: View {
-    @State var isChecked:Bool = false
+    
+    @Binding  var isChecked: Bool
     
     func toggle() {isChecked = !isChecked}
     

@@ -11,7 +11,7 @@ import SwiftUI
 struct Zaim_ExpressApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CheckoutView()
         }
     }
 }
