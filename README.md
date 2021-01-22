@@ -6,4 +6,4 @@
 
 Что есть на сегодня можете увидеть тут:
 
-![гитхабзайм](https://user-images.githubusercontent.com/60622982/105505536-1d5a1180-5cda-11eb-8dd5-495b12b9b132.gif)
+![123](https://user-images.githubusercontent.com/60622982/105506487-28fa0800-5cdb-11eb-8de6-a3326e83b6ab.gif)
