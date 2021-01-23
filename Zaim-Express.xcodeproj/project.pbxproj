@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B188B1D25B8249100750A54 /* Zaim_ExpressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B188B1C25B8249100750A54 /* Zaim_ExpressApp.swift */; };
-		7B188B1F25B8249100750A54 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B188B1E25B8249100750A54 /* ContentView.swift */; };
+		7B188B1F25B8249100750A54 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B188B1E25B8249100750A54 /* CheckoutView.swift */; };
 		7B188B2125B8249500750A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B188B2025B8249500750A54 /* Assets.xcassets */; };
 		7B188B2425B8249500750A54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B188B2325B8249500750A54 /* Preview Assets.xcassets */; };
 		7B477B4525B8880D0032F428 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B477B4425B8880C0032F428 /* CheckBoxView.swift */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		7B188B1925B8249100750A54 /* Zaim-Express.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zaim-Express.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B188B1C25B8249100750A54 /* Zaim_ExpressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zaim_ExpressApp.swift; sourceTree = "<group>"; };
-		7B188B1E25B8249100750A54 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7B188B1E25B8249100750A54 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 		7B188B2025B8249500750A54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B188B2325B8249500750A54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B188B2525B8249500750A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -55,8 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				7B188B1C25B8249100750A54 /* Zaim_ExpressApp.swift */,
-				7B188B1E25B8249100750A54 /* ContentView.swift */,
-				7B477B4425B8880C0032F428 /* CheckBoxView.swift */,
+				7BDDED6325BB87380033F03F /* Model */,
+				7BDDED6425BB877E0033F03F /* HomeScreen */,
 				7B188B2025B8249500750A54 /* Assets.xcassets */,
 				7B188B2525B8249500750A54 /* Info.plist */,
 				7B188B2225B8249500750A54 /* Preview Content */,
@@ -70,6 +70,22 @@
 				7B188B2325B8249500750A54 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7BDDED6325BB87380033F03F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7B477B4425B8880C0032F428 /* CheckBoxView.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7BDDED6425BB877E0033F03F /* HomeScreen */ = {
+			isa = PBXGroup;
+			children = (
+				7B188B1E25B8249100750A54 /* CheckoutView.swift */,
+			);
+			path = HomeScreen;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,7 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B188B1F25B8249100750A54 /* ContentView.swift in Sources */,
+				7B188B1F25B8249100750A54 /* CheckoutView.swift in Sources */,
 				7B188B1D25B8249100750A54 /* Zaim_ExpressApp.swift in Sources */,
 				7B477B4525B8880D0032F428 /* CheckBoxView.swift in Sources */,
 			);
