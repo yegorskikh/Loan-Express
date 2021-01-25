@@ -7,17 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B04463425BEC47600FFE456 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B04463325BEC47600FFE456 /* ProfileView.swift */; };
+		7B04463725BEC55300FFE456 /* MenuCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B04463625BEC55300FFE456 /* MenuCardsView.swift */; };
 		7B188B1D25B8249100750A54 /* Zaim_ExpressApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B188B1C25B8249100750A54 /* Zaim_ExpressApp.swift */; };
-		7B188B1F25B8249100750A54 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B188B1E25B8249100750A54 /* CheckoutView.swift */; };
+		7B188B1F25B8249100750A54 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B188B1E25B8249100750A54 /* CalculatorView.swift */; };
 		7B188B2125B8249500750A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B188B2025B8249500750A54 /* Assets.xcassets */; };
 		7B188B2425B8249500750A54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B188B2325B8249500750A54 /* Preview Assets.xcassets */; };
 		7B477B4525B8880D0032F428 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B477B4425B8880C0032F428 /* CheckBoxView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7B04463325BEC47600FFE456 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7B04463625BEC55300FFE456 /* MenuCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCardsView.swift; sourceTree = "<group>"; };
 		7B188B1925B8249100750A54 /* Zaim-Express.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zaim-Express.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B188B1C25B8249100750A54 /* Zaim_ExpressApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Zaim_ExpressApp.swift; sourceTree = "<group>"; };
-		7B188B1E25B8249100750A54 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		7B188B1E25B8249100750A54 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		7B188B2025B8249500750A54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B188B2325B8249500750A54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B188B2525B8249500750A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -83,7 +87,9 @@
 		7BDDED6425BB877E0033F03F /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
-				7B188B1E25B8249100750A54 /* CheckoutView.swift */,
+				7B188B1E25B8249100750A54 /* CalculatorView.swift */,
+				7B04463625BEC55300FFE456 /* MenuCardsView.swift */,
+				7B04463325BEC47600FFE456 /* ProfileView.swift */,
 			);
 			path = HomeScreen;
 			sourceTree = "<group>";
@@ -157,8 +163,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7B188B1F25B8249100750A54 /* CheckoutView.swift in Sources */,
+				7B188B1F25B8249100750A54 /* CalculatorView.swift in Sources */,
 				7B188B1D25B8249100750A54 /* Zaim_ExpressApp.swift in Sources */,
+				7B04463725BEC55300FFE456 /* MenuCardsView.swift in Sources */,
+				7B04463425BEC47600FFE456 /* ProfileView.swift in Sources */,
 				7B477B4525B8880D0032F428 /* CheckBoxView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

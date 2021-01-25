@@ -10,8 +10,28 @@ import SwiftUI
 @main
 struct Zaim_ExpressApp: App {
     var body: some Scene {
+        
         WindowGroup {
-            CheckoutView()
+            
+            TabView {
+                
+                CalculatorView()
+                    .tabItem {
+                        Image(systemName: "applescript")
+                    }
+                
+                MenuCardsView()
+                    .tabItem {
+                        Image(systemName: "applescript")
+                    }
+                
+                ProfileView()
+                    .tabItem {
+                        Image(systemName: "applescript")
+                    }
+            }
+                  
         }
+        
     }
 }

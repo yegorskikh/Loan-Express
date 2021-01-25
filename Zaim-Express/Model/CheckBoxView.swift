@@ -25,14 +25,3 @@ struct CheckBoxView: View {
     
 }
 
-struct RedView: View {
-    var body: some View {
-        Color.red
-    }
-}
-
-struct BlueView: View {
-    var body: some View {
-        Color.blue
-    }
-}
