@@ -121,11 +121,10 @@ struct CalculatorView: View {
                     }
                     .padding(.bottom, 5.0)
                     
-                    Button(action: {
                     
-                        print(">> tapped Получить займ")
-                        
-                    }) {
+                    
+                    
+                    NavigationLink(destination: Timekiller() ) {
                         Text("Получить деньги")
                     }
                     .disabled(!isActivate1)
