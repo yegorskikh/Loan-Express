@@ -14,6 +14,8 @@
 		7B188B2125B8249500750A54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B188B2025B8249500750A54 /* Assets.xcassets */; };
 		7B188B2425B8249500750A54 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B188B2325B8249500750A54 /* Preview Assets.xcassets */; };
 		7B477B4525B8880D0032F428 /* CheckBoxView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B477B4425B8880C0032F428 /* CheckBoxView.swift */; };
+		7B80A6C625BF11E400BB09CA /* NewLoanView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B80A6C525BF11E400BB09CA /* NewLoanView.swift */; };
+		7B80A6CB25BFFF7E00BB09CA /* CustomBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B80A6CA25BFFF7E00BB09CA /* CustomBackButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		7B188B2325B8249500750A54 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7B188B2525B8249500750A54 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7B477B4425B8880C0032F428 /* CheckBoxView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxView.swift; sourceTree = "<group>"; };
+		7B80A6C525BF11E400BB09CA /* NewLoanView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewLoanView.swift; sourceTree = "<group>"; };
+		7B80A6CA25BFFF7E00BB09CA /* CustomBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomBackButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				7B477B4425B8880C0032F428 /* CheckBoxView.swift */,
+				7B80A6CA25BFFF7E00BB09CA /* CustomBackButton.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -87,6 +92,7 @@
 		7BDDED6425BB877E0033F03F /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				7B80A6C525BF11E400BB09CA /* NewLoanView.swift */,
 				7B188B1E25B8249100750A54 /* CalculatorView.swift */,
 				7B04463625BEC55300FFE456 /* MenuCardsView.swift */,
 				7B04463325BEC47600FFE456 /* ProfileView.swift */,
@@ -164,8 +170,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B188B1F25B8249100750A54 /* CalculatorView.swift in Sources */,
+				7B80A6C625BF11E400BB09CA /* NewLoanView.swift in Sources */,
 				7B188B1D25B8249100750A54 /* Zaim_ExpressApp.swift in Sources */,
 				7B04463725BEC55300FFE456 /* MenuCardsView.swift in Sources */,
+				7B80A6CB25BFFF7E00BB09CA /* CustomBackButton.swift in Sources */,
 				7B04463425BEC47600FFE456 /* ProfileView.swift in Sources */,
 				7B477B4525B8880D0032F428 /* CheckBoxView.swift in Sources */,
 			);

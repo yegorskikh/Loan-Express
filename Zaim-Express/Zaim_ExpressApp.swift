@@ -15,7 +15,7 @@ struct Zaim_ExpressApp: App {
             
             TabView {
                 
-                CalculatorView()
+                NewLoanView()
                     .tabItem {
                         Image(systemName: "applescript")
                     }

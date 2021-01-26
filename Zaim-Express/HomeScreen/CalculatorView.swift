@@ -10,12 +10,14 @@ import SwiftUI
 struct CalculatorView: View {
     
     @State var loanAmount: Double = 15000
-    @State var term: Double = 15
+    @State var term: Double = 18
     @State var refundAmount = "XX XXX"
     @State var returnDay = "XX месяц XXXX г"
     
     @State private var isActivate1: Bool = false
     @State private var isActivate2: Bool = false
+    
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
         
@@ -73,6 +75,7 @@ struct CalculatorView: View {
                 }
                 .padding(.horizontal, 10.0)
                 
+                
                 VStack {
                     Text("\(returnDay).")
                     Text("Вы возращаете \(refundAmount) руб.")
@@ -81,6 +84,7 @@ struct CalculatorView: View {
                 .background(Color.gray.opacity(0.1))
                 .padding()
                 
+
                 VStack {
                     
                     HStack {
@@ -118,8 +122,7 @@ struct CalculatorView: View {
                     .padding(.bottom, 5.0)
                     
                     Button(action: {
-                        
-                        // ...
+                    
                         print(">> tapped Получить займ")
                         
                     }) {
@@ -131,14 +134,21 @@ struct CalculatorView: View {
                     .foregroundColor(.white)
                     .background(Color.orange)
                     .cornerRadius(10)
-                    .padding(.top, 30)
+                    .padding(.top, 104)
+                    .padding(.bottom, 40)
                     // TODO: Button
                 }
                 .padding()
+                
+                
             }
-            .navigationTitle("Оформить займ")
+           
         }
-        .padding() // TODO: Padding View
+        .navigationBarTitle("Оформить займ", displayMode: .inline)
+        .navigationBarBackButtonHidden(true)
+        .navigationBarItems(leading: CustomBackButton {
+            presentationMode.wrappedValue.dismiss()
+                    })
     }
     
 }
