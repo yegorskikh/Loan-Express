@@ -35,7 +35,7 @@ struct CalculatorView: View {
                 }
                 .padding(10)
                 
-                Slider(value: $loanAmount, in: 1000...30000, step: 1)
+                Slider(value: $loanAmount, in: 1000...30000, step: 100)
                     .padding(.horizontal, 10.0)
                     .accentColor(.green)
                 
